@@ -1,0 +1,43 @@
+name: hydralite_doc_patient
+description: "Doctor–Patient Audio Medical Summariser (Flutter App)"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  shared_preferences: ^2.2.2  # For persisting server URL
+  flutter:
+    sdk: flutter
+
+  # iOS-style icons
+  cupertino_icons: ^1.0.8
+
+  # -------- CORE FUNCTIONALITY --------
+
+  # Pick audio file (used as fake Bluetooth for now)
+  file_picker: ^6.1.1
+
+  # HTTP requests (upload audio, download PDF)
+  http: ^1.2.0
+
+  # Local file system access
+  path_provider: ^2.1.2
+
+  # Open generated PDF
+  open_filex: ^4.4.0
+
+  # -------- (OPTIONAL / FUTURE) --------
+  # Uncomment later when you add real Bluetooth
+  # flutter_blue_plus: ^1.35.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
